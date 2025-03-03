@@ -1,8 +1,9 @@
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <h1>hello world!</h1>
+    <div className="p-10">
+      <h1 className="text-3xl font-bold">hello world!</h1>
+      <p className="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga provident mollitia omnis. Repudiandae doloribus placeat accusamus, veniam officiis quisquam, tempore eius perferendis aut vero nulla repellendus et quidem aliquam commodi?</p>
     </div>
   );
 }
