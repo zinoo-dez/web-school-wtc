@@ -6,7 +6,7 @@ export default function BackgroundBeamsDemo() {
     return (
         <>
 
-            <div className="h-[90vh] w-full rounded-md bg-neutral-50 dark:bg-neutral-900 relative  antialiased">
+            <div className="h-[90vh] w-full rounded-md bg-neutral-950 dark:bg-neutral-900 relative  antialiased">
                 <Nav />
                 {/* <Image
                     src="/gg.png"
