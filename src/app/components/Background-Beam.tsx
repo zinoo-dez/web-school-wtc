@@ -1,7 +1,6 @@
 "use client"
 import { BackgroundBeams } from "@/components/ui/background-beams"
 import Nav from "./Nav"
-import Image from "next/image"
 
 export default function BackgroundBeamsDemo() {
     return (
