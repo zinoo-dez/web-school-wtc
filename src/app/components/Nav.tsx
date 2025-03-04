@@ -17,9 +17,21 @@ export default function Nav() {
                 className='md:hidden flex flex-col gap-2 cursor-pointer'
                 onClick={() => setIsOpen(!isOpen)}
             >
-                <span className='w-8 h-0.5 bg-slate-100' />
-                <span className='w-8 h-0.5 bg-slate-100' />
-                <span className='w-8 h-0.5 bg-slate-100' />
+                {
+                    isOpen ? (
+                        <div className='relative mr-2'>
+                            <span className='w-8 h-0.5 bg-slate-100 rotate-45 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' />
+                            <span className='w-8 h-0.5 bg-slate-100 -rotate-45 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2' />
+                        </div>
+                    ) : (
+                        <>
+                            <span className='w-8 h-0.5 bg-slate-100' />
+                            <span className='w-8 h-0.5 bg-slate-100' />
+                            <span className='w-8 h-0.5 bg-slate-100' />
+                        </>
+                    )
+                }
+
             </button>
             {isOpen && (
                 <ul className='md:hidden absolute top-20 w-full m-auto right-0 bg-[#0f172a88] backdrop-blur-md rounded-lg shadow-lg z-50 p-10'>
